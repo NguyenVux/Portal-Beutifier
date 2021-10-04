@@ -18,8 +18,8 @@ Extension Folder
 # Installation
 ## Enable developer mode on browser
 ### Click the name of the browser you are using
-- [Google Chrome](#-Chrome)
-- [Microsoft Edge](#-Edge)
+- [Google Chrome](#Chrome)
+- [Microsoft Edge](#Edge)
 
 ### Chrome
 ### Open this link: [Extension Page](chrome://extensions/)
