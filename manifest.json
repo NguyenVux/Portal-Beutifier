@@ -1,0 +1,12 @@
+{
+	"name": "FIT CTDA Schedule beautifier",
+	"description": "Make Portal Schedule look better",
+	"version": "1.0",
+	"manifest_version": 3,
+	"content_scripts": [ {
+		"matches": ["https://portal.ctdb.hcmus.edu.vn/sinh-vien/ket-qua-dkhp"],
+		"run_at": "document_idle",
+		"js": ["src/jquery.js","src/TimeTable.js"],
+		"css":["src/TimeTable.css"]
+	} ]
+}

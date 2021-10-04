@@ -1,0 +1,91 @@
+
+
+.schedule{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	*{
+		box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	}
+	height: 800px;
+	display:grid;
+	grid-template-columns: 35px repeat(7,1fr);
+
+	&__col{
+		&--timeline{
+			justify-items: start;
+
+		}
+		&--dayOfWeek{
+			
+			li
+			{
+				border-bottom: 1px solid rgb(153, 153, 153);
+				position: relative;
+			}
+			li:first-child
+			{
+				text-align: center;
+				align-self: flex-end;
+			}
+			li:not(:first-child)
+			{
+				border-left: 1px solid gray;
+				
+			}
+			li:nth-child(7)
+			{
+				border-left: none;
+				
+			}
+			justify-items: stretch;
+		}
+		height: 100%;
+		display:grid;
+		grid-template-rows: repeat(13,1fr);
+
+	}
+	&__col:last-child{
+			li:not(:first-child)
+			{
+				border-right: 1px solid gray;
+				
+			}
+	}
+	&__col:nth-child(2){
+			li:nth-child(7)
+			{
+				border-left: 1px solid gray;
+				
+			}
+	}
+}
+
+.time-card{
+	box-shadow: -2px 10px 32px -9px rgba(0,0,0,0.54);
+	position: absolute;
+	width: 100%;
+	z-index: 1000000;
+	color:white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.course-name{
+	width: 100%;
+	font-size: 1.1rem;
+	font-weight: bold;
+	white-space: pre-wrap;
+	overflow: hidden;
+}
+.course-time{
+	margin-bottom: 5px;
+}
